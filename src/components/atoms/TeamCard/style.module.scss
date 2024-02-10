@@ -1,0 +1,78 @@
+.team_card {
+    flex-shrink: 0;
+    width: 191px;
+}
+
+.image_wrap {
+    position: relative;
+    padding: 45px 0 35px;
+    margin-bottom: 12px;
+}
+
+.shape_top {
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 170px;
+    z-index: -1;
+}
+
+.shape_bottom {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 170px;
+    z-index: -1;
+}
+
+.image {
+    display: block;
+    width: 181px;
+    height: 181px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+.name {
+    font-family: "Helvetica Rounded", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.country_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.description {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1023px) {
+    .country_wrap {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px ) and (max-width: 1400px) {
+    .team_card {
+        transform: scale(.9);
+    }
+}

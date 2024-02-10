@@ -2,10 +2,6 @@
     display: none;
 }
 
-.container_mobile {
-    padding: 0 16px;
-}
-
 .title {
     margin: 40px 0;
     color: #3983ed;
@@ -28,59 +24,13 @@
     display: none;
 }
 
-.description_container {
-    padding: 96px 5px 40px;
-}
-
-.description_title {
-    font-family: "Helvetica Rounded", sans-serif;
-    margin: 0;
-    font-size: 84px;
-    line-height: 1;
-    text-align: center;
-}
-
-.description_subtitle {
-    margin: 0;
-    font-size: 24px;
-    line-height: 34px;
-    text-align: center;
-    padding-bottom: 24px;
-
-}
-
-.description_card {
-    font-family: "DM Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 28px;
-}
-
-.description_image_wrap {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-        height: 40px;
-        object-fit: contain;
-    }
-}
-
 .flex {
     display: flex;
     flex-wrap: wrap;
 }
 
 .column {
-    flex: 1;
+    flex: 1 1 0;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -90,7 +40,6 @@
 
     .container_desktop {
         display: block !important;
-        padding: 0 64px;
     }
 
     .title {
@@ -104,37 +53,17 @@
 
     .card_container_row1 {
         justify-content: space-between;
-        width: 52%;
+        width: 56%;
     }
 
     .card_container_row2 {
-        justify-content: space-around;
         margin: -125px 0;
+        justify-content: flex-end;
+        width: 77%;
     }
 
     .card_container_row3 {
         justify-content: space-between;
         width: 80%;
-    }
-
-    .description_card {
-        flex-basis: 50%;
-        box-sizing: border-box;
-    }
-
-    .description_title {
-        font-size: 190px;
-        line-height: 1;
-        letter-spacing: -0.02em;
-        text-align: left;
-        color: #3983ED;
-    }
-
-    .description_subtitle {
-        font-size: 30px;
-        line-height: 34px;
-        letter-spacing: -0.02em;
-        text-align: left;
-        color: #3983ED;
     }
 }

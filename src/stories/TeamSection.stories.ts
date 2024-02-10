@@ -8,7 +8,7 @@ const meta = {
     title: 'team section',
     component: TeamSection,
     parameters: {
-        layout: 'centered',
+        layout: 'padded',
     },
     tags: ['autodocs'],
 } satisfies Meta<typeof TeamSection>;

@@ -6,7 +6,7 @@ const meta = {
   title: 'count section',
   component: CountSection,
   parameters: {
-    layout: 'centered',
+    layout: 'padded',
   },
   tags: ['autodocs'],
 } satisfies Meta<typeof CountSection>;

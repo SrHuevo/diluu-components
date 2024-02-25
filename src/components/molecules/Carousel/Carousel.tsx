@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./style.module.scss";
-import {icons} from "../../../assets/icons/icons.ts";
-import IconButton from "../../atoms/IconButton/IconButton.tsx"
+import { icons } from "@/variables/icons";
+import IconButton from "@/components/atoms/IconButton/IconButton";
 
 type Props = {
   slides: Array<{
@@ -29,15 +29,12 @@ const Carousel = ({ slides }: Props) => {
   return (
     <div className={styles.content}>
       <div className={styles.parent}>
-        <img
-          src={icons.YellowShapeVector}
-          className={styles.yellow_vector}
-        />
+        <img src={icons.YellowShapeIcon} className={styles.yellow_vector} />
         <img src={carousel.image} className={styles.image} />
-        <img src={icons.PinkShapeVector} className={styles.pink_vector} />
+        <img src={icons.PinkShapeIcon} className={styles.pink_vector} />
       </div>
       <div className={styles.card}>
-        <img src={icons.SmileVector} className={styles.icon} />
+        <img src={icons.SmileIcon} className={styles.icon} />
         <p className={styles.card_title}>{carousel.title}</p>
         <p className={styles.card_description}>{carousel.description}</p>
         <div className={styles.arrow}>

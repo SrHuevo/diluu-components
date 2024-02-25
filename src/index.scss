@@ -1,23 +1,22 @@
-
 @font-face {
-  font-family: "Helvetica Rounded";
+  font-family: "Helvetica";
   src: url("src/assets/fonts/HelveticaRoundedLTStd-Bd.woff2") format("woff2"),
-  url("src/assets/fonts/HelveticaRoundedLTStd-Bd.woff") format("woff"),
-  url("src/assets/fonts/HelveticaRoundedLTStd-Bd.ttf") format("truetype"),
-  url("src/assets/fonts/HelveticaRoundedLTStd-Bd.svg?url#helvetica_rounded_lt_stdbold")
-  format("svg");
+    url("src/assets/fonts/HelveticaRoundedLTStd-Bd.woff") format("woff"),
+    url("src/assets/fonts/HelveticaRoundedLTStd-Bd.ttf") format("truetype"),
+    url("src/assets/fonts/HelveticaRoundedLTStd-Bd.svg?url#helvetica_rounded_lt_stdbold")
+      format("svg");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Helvetica Rounded";
+  font-family: "Helvetica";
   src: url("src/assets/fonts/HelveticaRoundedLTStd-Black.woff2") format("woff2"),
-  url("src/assets/fonts/HelveticaRoundedLTStd-Black.woff") format("woff"),
-  url("src/assets/fonts/HelveticaRoundedLTStd-Black.ttf") format("truetype"),
-  url("src/assets/fonts/HelveticaRoundedLTStd-Black.svg?url#helvetica_rounded_lt_stdblack")
-  format("svg");
+    url("src/assets/fonts/HelveticaRoundedLTStd-Black.woff") format("woff"),
+    url("src/assets/fonts/HelveticaRoundedLTStd-Black.ttf") format("truetype"),
+    url("src/assets/fonts/HelveticaRoundedLTStd-Black.svg?url#helvetica_rounded_lt_stdblack")
+      format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -26,7 +25,7 @@
 @font-face {
   font-family: "DM Sans";
   src: url("src/assets/fonts/DMSans-Regular.woff2") format("woff2"),
-  url("src/assets/fonts/DMSans-Regular.woff") format("woff");
+    url("src/assets/fonts/DMSans-Regular.woff") format("woff");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -34,5 +33,9 @@
 
 body {
   margin: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans";
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

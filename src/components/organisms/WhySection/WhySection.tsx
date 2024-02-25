@@ -1,6 +1,7 @@
-import Carousel from "../../molecules/Carousel/Carousel";
 import styles from "./style.module.scss";
-import {icons} from "../../../assets/icons/icons.ts";
+import Container from "@/components/atoms/Container/Container.tsx";
+import Carousel from "@/components/molecules/Carousel/Carousel.tsx";
+import { icons } from "@/variables/icons";
 
 type WhySectionProps = {
   title: string;
@@ -9,32 +10,32 @@ type WhySectionProps = {
     title: string;
     description: string;
   }[];
-}
+};
 
-function WhySection({title, slides}: WhySectionProps) {
+function WhySection({ title, slides }: WhySectionProps) {
   return (
     <div className={styles.bg}>
-      <div className={styles.container}>
+      <Container>
         <p className={styles.title}>{title}</p>
         <div className={styles.content}>
           <Carousel slides={slides} />
         </div>
         <img
-          src={icons.PinkShapeVector}
+          src={icons.PinkShapeIcon}
           className={styles.footer_pink_vector}
-          alt="Pink Vector"
+          alt="Pink Icon"
         />
         <img
-          src={icons.GreenShapeVector}
+          src={icons.GreenShapeIcon}
           className={styles.footer_green_vector}
-          alt="Green Vector"
+          alt="Green Icon"
         />
         <img
-          src={icons.OrangeShapeVector}
+          src={icons.OrangeShapeIcon}
           className={styles.footer_orange_vector}
-          alt="Orange Vector"
+          alt="Orange Icon"
         />
-      </div>
+      </Container>
     </div>
   );
 }
